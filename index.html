@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Assignment 3 - Plugins</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="This site is for the jQuery Assignment #3" />
+	<meta name="keywords" content="jQuery, CodingDojo" />
+	
+	<link rel="stylesheet" href="css/fractionslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+	<script src="js/jquery.fractionslider.js"></script> 
+
+	<script>
+		$(document).ready(function() {
+			$('.slider').fractionSlider({
+				'slideTransitionSpeed' : 500,
+				'pager' : true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>CodingDojo jQuery Assignment 3</h1>
+		<div class="slider-wrapper">
+			<div class="slider"><!-- your slider container -->
+				<div class="fs_loader"><!-- shows a loading .gif while the slider is getting ready --></div>
+		  	<div class="slide" data-in="slideRight">
+					<img data-in="left" data-out="right" data-time="1000" data-position="40,20" src="images/coding-dojo-logo.png">
+					<div id="topics" data-in="bottom" data-out="top" data-delay="1000" data-time="2500" data-position="130,20">
+						<h4>Topics</h4>
+						<p>Each topic, tool, and methodology you will learn has been carefully chosen to mirror what you will use daily as a web developer. You'll earn corresponding "belts" to track your progress.</p>
+					</div>
+					<div id="white-belt" class="belt" data-in="bottomRight" data-delay="1000" data-time="2500" data-position="60,400"><p>HTML, CSS, JQuery, JQuery UI</p></div>
+					<div id="ylw-belt" class="belt" data-in="bottomRight" data-delay="1500" data-time="3000" data-position="110,360"><p>PHP, Ajax, MySQL, Database Design, Agile</p></div>
+					<div id="grn-belt" class="belt" data-in="bottomRight" data-delay="2000" data-time="3500" data-position="160,320"><p>OOP, Git, SVN, Ruby, Linux and Cloud (AWS)</p></div>
+					<div id="red-belt" class="belt" data-in="bottomRight" data-delay="2500" data-time="5000" data-position="210,280"><p>Ruby on Rails, CodeIgniter, Underscore, SASS</p></div>
+					<div id="blk-belt" class="belt" data-in="bottomRight" data-delay="3000" data-time="6500" data-position="260,240"><p>(Optional) NodeJS, MongoDB, Redis, TDD, Python, Django, C# or Java</p></div>
+					<img data-fixed src="images/slide-01.jpg" width="800" height="450">
+				</div>
+			  <div class="slide" data-in="slideLeft">
+					<img data-in="bottomLeft" data-time="1500" data-delay="750" data-position="80,440" src="images/coding-dojo-logo.png">
+					<img class="photo" data-in="left" data-out="bottomLeft" data-time="1000" data-position="40,40" src="images/photo-01.png">
+					<img class="photo" data-in="left" data-out="bottomRight" data-delay="1000" data-time="2000" data-position="60,200" src="images/robert.png">
+					<img class="photo" data-in="bottomRight" data-out="bottomRight" data-delay="1500" data-time="2500" data-position="180,110" src="images/toni.png">
+					<h3 data-in="left" data-out="right" data-delay="1500" data-time="2500" data-position="335,40">Meet new people and form new, lasting frienships!</h3>
+					<img data-fixed src="images/slide-02.jpg" width="800" height="450">
+				</div>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="content-inner">
+				<h2>Description</h2>
+				<p>This website demonstrates the use of the jQuery FractionSlider plugin. I found this plugin while searching the jQuery Plugin Registry at <a href="http://plugins.jquery.com/" title="jQuery Plugin Registry">http://plugins.jquery.com</a></p>
+			</div>
+		</div>
+	</div>		
+</body>
+</html>
